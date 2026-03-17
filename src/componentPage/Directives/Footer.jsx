@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "../../StylesPage/Footer.css";
-import footer from "../../assetsPage/assets/footer11.png";
 import oneso from "../../assetsPage/assets/footer/one.png";
 import twoso from "../../assetsPage/assets/footer/two.png";
 import threeso from "../../assetsPage/assets/footer/three.png";
@@ -22,7 +21,7 @@ const Footer = () => {
     <div className="nova-wrapper">
       
       {/* 3D App Banner */}
-      <section className="nova-app-card">
+      {/* <section className="nova-app-card">
         <div className="nova-content-side">
           <span className="nova-tag">Download our app</span>
           <h2 className="nova-hero-title">
@@ -58,7 +57,7 @@ const Footer = () => {
             <img src={footer} alt="phone" className="nova-phone-img" />
           </motion.div>
         </div>
-      </section>
+      </section> */}
 
 
       {/* Partner Logos */}

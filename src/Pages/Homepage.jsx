@@ -13,6 +13,7 @@ import Footer from "../componentPage/Directives/Footer.jsx"
 import "./IndexGgl.css";
 import TopStats from "../componentPage/HomeComponent/TopStats.jsx"
 import Calculator from "../componentPage/HomeComponent/Calculator.jsx"
+import Downloadapp from "../componentPage/HomeComponent/Downloadapp.jsx"
 // import Login from "../Login/Login.jsx"
 // Directive Components
 
@@ -73,6 +74,7 @@ function HomePage() {
          <section id="howtomakemoney">
         <S6HowMoney />
       </section>
+      <Downloadapp/>
 <Footer/>
       {/* <Login/> */}
     </>
