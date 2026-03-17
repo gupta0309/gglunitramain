@@ -3,6 +3,7 @@ import "../Styles/PosterGallery.css";
 import Header from "../../componentPage/Directives/Header";
 import TopStats from "../../componentPage/HomeComponent/TopStats";
 import videotop from "../assets/gallery/videogallery.mp4";
+import Footer from "../../componentPage/Directives/Footer"
 
 import poster1 from "../assets/gallery/firstphoto.jpg";
 import poster2 from "../assets/gallery/second.jpg";
@@ -11,30 +12,30 @@ import poster4 from "../assets/gallery/fourth.jpg";
 import poster5 from "../assets/gallery/fifthphoto.jpg";
 import poster6 from "../assets/gallery/sixthphoto.jpg";
 import poster7 from "../assets/gallery/seventhphoto.jpg";
-import poster8 from "../assets/gallery/eighthphoto.jpg";
+
+
+import pgposter1 from "../assets/gallery/pg-one.png";
+import pgposter2 from "../assets/gallery/pg-two.png";
+import pgposter3 from "../assets/gallery/pg-three.jpeg";
+
 
 /* REAL VIDEOS IMPORT */
-import video1 from "../assets/gallery/videogallery.mp4";
-import video2 from "../assets/gallery/videogallery.mp4";
-import video3 from "../assets/gallery/videogallery.mp4";
-import video4 from "../assets/gallery/videogallery.mp4";
-import video5 from "../assets/gallery/videogallery.mp4";
+import video1 from "../../assetsPage/assets/S4About/video.mp4";
+import video2 from "../../assetsPage/assets/S4About/video.mp4";
+import video3 from "../../assetsPage/assets/S4About/video.mp4";
+import video4 from "../../assetsPage/assets/S4About/video.mp4";
+import video5 from "../../assetsPage/assets/S4About/video.mp4";
 
 const posters = [
-  poster1, poster2, poster3, poster4,
-  poster5, poster6, poster7, poster8
+  poster1, poster2,  poster1, poster2
 ];
 
 /* PHOTO GALLERY DATA */
 const photoGallery = [
-  { img: poster1, title: "Skyline Heights" },
-  { img: poster2, title: "Azure Residences" },
-  { img: poster3, title: "Tower Elite" },
-  { img: poster4, title: "Urban Crest" },
-  { img: poster5, title: "Palm Horizon" },
-  { img: poster6, title: "Imperial Homes" },
-  { img: poster7, title: "Golden Residency" },
-  { img: poster8, title: "Grand Habitat" },
+  { img: pgposter1, title: "Skyline Heights" },
+  { img: pgposter2, title: "Azure Residences" },
+  { img: pgposter3, title: "Tower Elite" },
+  
 ];
 
 /* VIDEO GALLERY DATA */
@@ -359,6 +360,7 @@ developments. Architecturally significant spaces designed for modern living.   <
           </div>
         )}
       </div>
+      <Footer/>
     </>
   );
 };
