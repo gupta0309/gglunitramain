@@ -190,8 +190,10 @@ FLOATING ELEMENTS
 FOOTER
 ============================= */
 
-.nova-footer { padding: 80px 5% 40px; border: 3px solid #4add9613; }
-
+.nova-footer { padding: 80px 5% 40px; }
+.tagline-top{
+  border: 3px solid #4add961e;
+}
 .nova-footer-top{
     display: grid;
     grid-template-columns: 1.2fr 3fr;

@@ -14,7 +14,7 @@ import footerthree from "../../assetsPage/assets/footer/gglfooterthree.png"
 
 const Footer = () => {
   return (
-    <div className="nova-wrapper">
+    <div className="nova-wrapper tagline-top">
       
       {/* 3D App Banner */}
       {/* <section className="nova-app-card">
