@@ -8,6 +8,8 @@
   overflow-x: hidden;
   background: white;
   padding-top: 20px;
+  
+
 }
 
 /* =============================
@@ -188,7 +190,7 @@ FLOATING ELEMENTS
 FOOTER
 ============================= */
 
-.nova-footer { padding: 80px 5% 40px; }
+.nova-footer { padding: 80px 5% 40px; border: 3px solid #4add9613; }
 
 .nova-footer-top{
     display: grid;
@@ -367,7 +369,14 @@ BOTTOM
 grid-column: span 2;
 }
 
+.nova-social-icon i{
+  color: #000;              /* default color */
+  transition: 0.3s ease;
+}
 
+.nova-social-icon:hover i{
+  color: #4ADD97;           /* 👈 hover color */
+}
 /* =============================
 RESPONSIVE
 ============================= */

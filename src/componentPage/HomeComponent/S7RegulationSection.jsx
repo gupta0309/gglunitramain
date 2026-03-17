@@ -70,14 +70,15 @@ const S7RegulationSection = () => {
 
             <div className="superunique-stepper">
 
-              {testimonials.map((_, index) => (
-                <span
-                  key={index}
-                  className={`superunique-step ${
-                    activeIndex === index ? "superunique-step-active" : ""
-                  }`}
-                ></span>
-              ))}
+        {testimonials.map((_, index) => (
+  <span
+    key={index}
+    className={`superunique-step ${
+      activeIndex === index ? "superunique-step-active" : ""
+    }`}
+    onClick={() => setActiveIndex(index)}   // 🔥 CLICK FUNCTION
+  ></span>
+))}
 
             </div>
 

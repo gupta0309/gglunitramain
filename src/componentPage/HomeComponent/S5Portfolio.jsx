@@ -141,7 +141,7 @@ real estate portfolio
                   <div className="discover-div">
 
                     <button className="discover-btn">
-                      Discover More →
+                      Discover More <i className="fa-solid fa-arrow-right"></i>
                     </button>
 
                     <div className="gglra-slider-buttons">
@@ -150,14 +150,14 @@ real estate portfolio
                         className="gglra-slide-btn"
                         onClick={slideLeft}
                       >
-                        ←
+                        <i className="fa-solid fa-arrow-left"></i>
                       </button>
 
                       <button
                         className="gglra-slide-btn"
                         onClick={slideRight}
                       >
-                        →
+                        <i className="fa-solid fa-arrow-right"></i>
                       </button>
 
                     </div>

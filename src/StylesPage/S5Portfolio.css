@@ -53,7 +53,7 @@
   /* background: #f8fdfb; Match page bg to hide content behind */
   padding-top: 20px;
   font-weight: 100;
-  background: #F1F5F9CC;
+
  
 }
 .stack-layer h4{
@@ -76,7 +76,7 @@
   background:#fff;
 }
 
-.header-left h2 { font-size: 24pxs; line-height: 40px; font-family: "Droxen",sans-serif; font-weight: 400; max-width: 375px; letter-spacing: 1px; padding-bottom: 20px;}
+.header-left h2 { font-size: 24px; line-height: 40px; font-family: "Droxen",sans-serif; font-weight: 400; max-width: 400px; letter-spacing: 1px; padding-bottom: 20px;}
 /* .type-tag { border: 1px solid #4ADD97; padding: 0px 12px; border-radius: 20px; width: fit-content; z-index: 1 !important; display: flex;
 height: 38px;}
 .type-tag img{z-index: 2 !important; height: 20px; top: -20px !important; } */
@@ -129,6 +129,8 @@ align-items:center;
 .discover-btn { background: #4add96ee; color: #000; border: none; padding: 10px 25px; border-radius: 30px; cursor: pointer; height: 56px; font-weight: 400; font-size: 18px; font-family: "gued",sans-serif; }
 .expected-div{
   width: 222px;
+  border: 1px solid #00C86952;
+  border-radius: 50px;
 }
 /* The Actual Card */
 .glass-card {
@@ -259,12 +261,15 @@ cursor:pointer;
 }
 .price-info div .expected{
 background:#f4f8f6;
-padding:10px 15px;
+padding:0px 15px;
 border-radius:50px;
 font-size:12px;
 display:flex;
 flex-direction:column;
 align-items:center;
+margin: 2px;
+text-transform: uppercase;
+color: #64748B;
 
 }
 .price-info div .expected span{

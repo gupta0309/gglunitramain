@@ -1,10 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "../../StylesPage/Footer.css";
-import oneso from "../../assetsPage/assets/footer/one.png";
-import twoso from "../../assetsPage/assets/footer/two.png";
-import threeso from "../../assetsPage/assets/footer/three.png";
-import fourso from "../../assetsPage/assets/footer/four.png";
 import logo from "../../assetsPage/assets/logo.png";
 import location from "../../assetsPage/assets/footer/location.png";
 import call from "../../assetsPage/assets/footer/call.png";
@@ -92,19 +88,19 @@ const Footer = () => {
 
             <div className="nova-social-row">
               <span className="nova-social-icon">
-                <img src={oneso} alt="social"/>
+                <i className="fa-brands fa-instagram"></i>
               </span>
 
               <span className="nova-social-icon">
-                <img src={twoso} alt="social"/>
+               <i className="fa-brands fa-facebook-f"></i>
               </span>
 
               <span className="nova-social-icon">
-                <img src={threeso} alt="social"/>
+                <i className="fa-brands fa-linkedin"></i>
               </span>
 
               <span className="nova-social-icon">
-                <img src={fourso} alt="social"/>
+                <i className="fa-brands fa-twitter"></i>
               </span>
             </div>
           </div>
@@ -119,7 +115,7 @@ const Footer = () => {
                 <span><HashLink smooth to="/">Home</HashLink></span>
                 <span><HashLink smooth to="/#about-us">About Us</HashLink></span>
                 <span><HashLink smooth to="/#portfolio">Property</HashLink></span>
-                <span><HashLink smooth to="/gallery">Gallery</HashLink></span>
+                <span><HashLink smooth to="/">Gallery</HashLink></span>
                 <span><HashLink smooth to="/#how-money">Blog</HashLink></span>
               </nav>
             </div>

@@ -67,7 +67,7 @@
 .re-platform__cta-button {
   background: #4ADD97;
   color: #000;
-  padding: 16px 45px;
+  padding: 10px 50px;
   border-radius: 30px;
   border: none;
   font-size: 18px;
@@ -78,7 +78,7 @@
 }
 
 .re-platform__cta-button:hover {
-  box-shadow: 0 15px 30px rgba(46, 204, 112, 0.632);
+  box-shadow: 0 10px 30px rgba(19, 20, 20, 0.413);
 }
 
 .re-platform__image-area {
