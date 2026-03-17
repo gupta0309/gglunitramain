@@ -1,5 +1,5 @@
 .nova-wrapper {
-  --nova-primary: #00d384;
+  --nova-primary: #4ADD97;
   --nova-bg-light: #f8fffb;
   --nova-dark: #121212;
   --nova-text-muted: #6b7280;
@@ -54,7 +54,7 @@ APP BANNER
 
 .nova-app-card {
   background: var(--nova-primary);
-  max-width: 80%;
+  width: 88%;
   height: 450px;
   margin: 60px auto;
   border-radius: 40px;
@@ -419,6 +419,7 @@ text-align:center;
 
 .nova-app-card{
   width: 100%;
+  margin: 0;
 }
 .nova-wrapper{
   padding: 20px 0px;
@@ -426,14 +427,21 @@ text-align:center;
 }
 .nova-partner-row{
   gap: 20px;
+  flex-direction: column;
 }
 .nova-footer{
   padding: 30px;
 }
-.nova-footer-heading{
-  font-size: 24px;
+.nova-footer-heading h2{
+  font-size: 20px;
   margin-bottom: 20px;
+  margin: 0;
 }
+
+.nova-footer-heading{
+  margin: 0;
+}
+
 }
 
 @media (max-width:480px){

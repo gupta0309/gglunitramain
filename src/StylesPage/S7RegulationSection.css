@@ -4,7 +4,7 @@
 --sq-dark:#121212;
 --sq-gray:#666666;
 
-padding:100px 8%;
+padding:100px 85px;
 background:#fafffd;
 font-family:'gued',sans-serif;
 color:var(--sq-dark);
@@ -184,16 +184,25 @@ font-size:1.05rem;
 /* 768px */
 @media (max-width:768px){
 
+.superunique-badge-center{
+    text-align: left;
+}
+
 .superunique-container{
 padding:60px 20px;
 }
 
 .superunique-testimonial-header{
 font-size:22px;
+text-align: left;
 }
 
+.superunique-stat-box{
+text-align: left;
+}
 .superunique-big-stat{
 font-size:30px;
+text-align: left;
 }
 
 .superunique-quote-body{
@@ -214,6 +223,11 @@ font-size:3rem;
 display:none;
 }
 
+.superunique-testimonial-layout{
+
+padding-bottom: 10px;
+}
+
 }
 
 /* 480px */
@@ -221,6 +235,7 @@ display:none;
 
 .superunique-container{
 padding:50px 15px;
+padding: 20px;
 }
 
 .superunique-testimonial-header{
@@ -230,7 +245,7 @@ margin-bottom:20px;
 
 .superunique-big-stat{
 font-size:16px;
-text-align:center;
+
 }
 
 .superunique-avatar{

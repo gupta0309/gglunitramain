@@ -140,14 +140,14 @@ export default function UnistraCalculator() {
               </div>
 
               <div className="ggl-unistra-market-card ggl-unistra-active">
-                <i className="fa-solid fa-circle-dot"></i><p>Market Price</p>
+                <i className="fa-solid fa-circle-dot" style={{color:"#4add97"}}></i><p>Market Price</p>
                 <h4>
                   ₹{gglUnistraPrice} <span>/SQFT</span>
                 </h4>
               </div>
 
               <div className="ggl-unistra-market-card">
-               <i className="fa-regular fa-circle"></i> <p>Limit Price</p>
+               <i className="fa-regular fa-circle"style={{color:"#4add97"}}></i> <p>Limit Price</p>
                 <h4>
                   ₹9536.89 <span>/SQFT</span>
                 </h4>
@@ -168,20 +168,23 @@ export default function UnistraCalculator() {
                 ₹{gglUnistraTotal.toFixed(2)}
               </h1>
 
+<p className="small-box-two">(Incl.Fees, Other Levies & Discount)</p>
               <div className="ggl-unistra-breakdown">
 
                 <div>
-                  <span>Trade Value</span>
-                  <span>₹{gglUnistraTrade.toFixed(2)}</span>
-                </div>
-
+  <span>
+    <i className="fa-solid fa-circle" style={{ fontSize: "8px", color:"#4add97"}}></i>
+    {" "}Trade Value
+  </span>
+  <span>₹{gglUnistraTrade.toFixed(2)}</span>
+</div>
                 <div>
-                  <span>Volatility Margin</span>
+                  <span> <i className="fa-solid fa-circle" style={{ fontSize: "8px", color:"#4add97"}}></i>{" "}Volatility Margin</span>
                   <span>₹{gglUnistraVolatility.toFixed(2)}</span>
                 </div>
 
                 <div>
-                  <span>Fees & Other Levies</span>
+                  <span> <i className="fa-solid fa-circle" style={{ fontSize: "8px", color:"#4add97"}}></i>{" "}Fees & Other Levies</span>
                   <span>₹{gglUnistraFees}</span>
                 </div>
 

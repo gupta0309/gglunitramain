@@ -104,7 +104,7 @@ const S5Portfolio = () => {
 
         <h1>
           Build a <span className="green">global</span> and diversified
-          <br/> real estate portfolio
+real estate portfolio
         </h1>
 
       </div>

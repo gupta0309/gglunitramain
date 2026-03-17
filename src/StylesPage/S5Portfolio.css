@@ -12,6 +12,9 @@
   text-align: center;
   padding: 80px 0;
   padding-top: 20px;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
 }
 
 .global-title .green { color: #4ADD97; }
@@ -30,7 +33,8 @@
   font-size:28px;
   font-weight:400;
   font-family:"Droxen",sans-serif;
-  margin-top:10px;          /* gap from badge */
+  margin-top:10px; 
+  max-width: 673px;         /* gap from badge */
 }
 /* THE STACKING LOGIC */
 .main-stack-container {
@@ -90,6 +94,8 @@ height: 38px;}
   overflow: visible;       /* taaki image bahar aa sake */
   background: #85EEB31A;
   gap: 8px;
+
+
 }
 
 /* .exclusive img{
@@ -426,6 +432,7 @@ padding: 0px;
 .gglra-slider-track{
   display:flex;
   transition: transform 0.7s ease;
+  
 }
 
 .stack-layer{
@@ -540,14 +547,28 @@ padding: 0px;
   .header-right {
     flex-direction: column;
     gap: 15px;
+    align-items: left;
+    justify-content: left;
+    justify-items: left;
   }
 
   .header-right p {
     max-width: 100%;
+    font-size: 18px;
+    line-height: 1.2;
   }
-
+.discover-div{
+  text-align: left;
+  align-items: left;
+  justify-content: left;
+  justify-items: left;
+}
   .discover-btn {
     width: fit-content;
+  }
+  .gglra-slider-buttons{
+    text-align: center;
+    justify-content: center;
   }
 
   .image-side {
@@ -632,6 +653,10 @@ padding: 0px;
     flex: 1 1 100%;
   }
 
+  .type-tag{
+    margin-bottom: 10px;
+  }
+
   .agent {
     flex-direction: column;
     align-items: flex-start;
@@ -654,10 +679,12 @@ padding: 0px;
 
   .global-title {
     padding: 40px 10px;
+    text-align: left;
+    padding-bottom: 0px;
   }
 
   .global-title h1 {
-    font-size: 18px;
+    font-size: 22px;
   }
 
   .image-side {
@@ -681,5 +708,9 @@ padding: 0px;
     flex-direction: column;
     gap: 10px;
   }
+
+.header-left h2 {
+  line-height: 1.2;
+}
 
 }
