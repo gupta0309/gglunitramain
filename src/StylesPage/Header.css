@@ -1,0 +1,185 @@
+/* Container styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 65px;
+  background-color: #fff;
+padding-bottom: ;
+}
+
+/* Logo styling */
+.nav-logo .logo-#4ADD97 { color: #4ADD97; font-weight: bold; font-size: 24px; }
+.nav-logo .logo-black { color: #000; font-weight: bold; font-size: 24px; letter-spacing: 2px; }
+.logo-subtext { font-size: 10px; margin: 0; color: #555; text-transform: capitalize; }
+
+/* Center Links - Pill Shape */
+.nav-links {
+  display: flex;
+  list-style: none;
+  background: #fdfdfd;
+  gap: 30px;
+  padding: 10px 30px;
+  border-radius: 50px;
+  /* box-shadow: 0 4px 15px rgba(0,0,0,0.05); */
+     box-shadow: 0 9px 16px -10px rgba(0, 0, 0, 0.212);}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: 0.3s;
+    font-family: dm-sans, sans-serif;
+    position: relative;
+    text-decoration: none;
+}
+
+/* .nav-links li a:hover, .nav-links li a:active {
+   border-bottom: 4px solid transparent;
+  border-image: linear-gradient(
+    to right,
+    #4ADD97 0%,
+    #4ADD97 10%,
+    transparent 10%,
+    transparent 19%,
+    #4ADD97 19%,
+    #4ADD97 100%
+  ) 1;
+} */
+
+.nav-links li a::after{
+content:"";
+position:absolute;
+left:0;
+bottom:-6px;
+width:0%;
+height:4px;
+
+background:linear-gradient(
+to right,
+#4ADD97 0%,
+#4ADD97 10%,
+transparent 10%,
+transparent 19%,
+#4ADD97 19%,
+#4ADD97 100%
+);
+
+border-radius:20px;   /* radius yaha work karega */
+transition:0.4s ease;
+}
+
+.nav-links li a:hover::after,
+.nav-links li a:active::after{
+width:100%;
+}
+
+
+/* Auth Buttons */
+.nav-auth { display: flex; gap: 15px;  }
+
+.btn-signin {
+  background-color: #4ADD97;
+  color: #000;
+  border: none;
+  padding: 6px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "gued",sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.btn-signin:hover {
+  box-shadow: 0px 5px 15px rgba(36, 37, 36, 0.4);
+}
+
+.btn-signup {
+  background-color: transparent;
+  color: #333;
+  border: 1px solid #4ADD97;
+  padding: 6px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "gued",sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.btn-signup:hover {
+  box-shadow: 0px 5px 15px rgba(36, 37, 36, 0.4);
+}
+.logo-image{
+  width: 155px;
+  height: 49px;
+}
+.btn-signin-mobile{
+  display: none;
+}
+
+.btn-signup-mobile{
+  display: none;
+}
+/* Responsive Logic */
+.mobile-menu-icon { display: none; font-size: 25px; background: none; border: none; }
+
+@media (max-width: 992px) {
+  .navbar{
+    padding: 15px 20px;
+  }
+  .nav-links, .nav-auth { display: none; }
+  .mobile-menu-icon { display: block; }
+  
+ .nav-links-mobile{
+  position:absolute;
+  display:block;
+  list-style:none;
+  background:#ffffff;
+  left:0;
+  top:130px;   /* yaha increase kiya */
+  width:100%;
+  transition:all 0.4s ease;
+  box-shadow:0 20px 40px rgba(0,0,0,0.15);
+  z-index:100;
+  padding:30px 0;
+  border-radius:0 0 20px 20px;
+}
+  .nav-links-mobile ul{
+    text-decoration: none;
+    color: #000;
+  }
+  .nav-links-mobile li { padding: 15px; text-align: center; list-style: none;text-decoration: none;
+    border: 1px solid black;
+    color: #000;}
+
+
+
+    .nav-links-mobile li a{text-decoration: none;
+    color: #000;}
+  .logo-image {
+    width: 115px;
+    height: 40px;
+  }
+
+   .nav-links-mobile li a:hover{
+    border-bottom: #4ADD97 1px solid;
+   }
+
+}
+
+@media(max-width:750px){
+  .btn-signin-mobile{
+  display: block;
+}
+
+.btn-signup-mobile{
+  display:block;
+}
+}

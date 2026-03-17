@@ -1,0 +1,415 @@
+.ggl-unistra-section{
+  background:#000;
+  padding:80px 100px;
+  color:#fff;
+  text-align:center;
+  position:relative;
+  overflow:hidden;   /* 🔥 ADD THIS */
+}
+
+.ggl-unistra-ribbon{
+  position:absolute;
+  top:70px;
+  left:-65px;
+  background:red;
+  padding:8px 90px;
+  transform:rotate(-45deg);
+  font-weight:600;
+  z-index:2;
+  pointer-events:none; /* optional */
+  clip-path: inset(0 0 0 0); /* force clipping */
+  font-size: 20px;
+}
+
+.ggl-unistra-tag{
+background:#DCFCE7;
+color:#000;
+display:inline-block;
+padding:6px 16px;
+border-radius:20px;
+font-size:12px;
+margin-bottom:15px;
+text-transform: uppercase;
+}
+
+.ggl-unistra-heading{
+font-size:28px;
+margin-bottom:25px;
+font-family: "Droxen",sans-serif;
+}
+
+.ggl-unistra-heading span{
+color:#4ADD97;
+}
+
+.ggl-unistra-toggle{
+display:inline-flex;
+background:#e6e6e6;
+border-radius:30px;
+padding:5px;
+margin-bottom:40px;
+}
+
+.ggl-unistra-toggle button{
+border:none;
+padding:10px 25px;
+border-radius:25px;
+background:transparent;
+cursor:pointer;
+color: #000;
+}
+
+
+
+.ggl-unistra-toggle button:active,.ggl-unistra-toggle button:hover{
+background:#4ADD97;
+}
+
+.ggl-unistra-main-card{
+display:flex;
+gap:25px;
+/* background:linear-gradient(180deg,#1a1a1a,#0e0e0e); */
+border-radius:16px;
+margin-top:30px;
+gap: 15px;
+/* padding: 30px 50px; */
+}
+
+.ggl-unistra-left-wrapper{
+     border: 1px solid #3D3D3D;
+     background: #1B1B1B;
+}
+
+.ggl-unistra-left{
+display:flex;
+gap:20px;
+align-items:stretch;
+padding: 30px;
+background:#1B1B1B;
+}
+
+.ggl-unistra-calc-box{
+background:#efefef;
+color:#000;
+padding:25px;
+border-radius:12px;
+text-align:left;
+width:450px;
+flex:none;
+}
+
+.ggl-unistra-calc-box-two{
+background:#efefef;
+color:#000;
+padding:25px;
+border-radius:12px;
+text-align:left;
+width:380px;
+flex:none;
+}
+
+
+.ggl-unistra-label{
+color:#555;
+margin-bottom:10px;
+}
+
+.ggl-unistra-qty-box{
+display:flex;
+align-items:center;
+justify-content:space-between;
+background:#fff;
+border-radius:30px;
+padding:8px 12px;
+margin-bottom:20px;
+}
+
+.ggl-unistra-qty-box button{
+border:none;
+background:#e5e5e5;
+width:35px;
+height:35px;
+border-radius:50%;
+cursor:pointer;
+}
+
+.ggl-unistra-plus{
+background:#4ADD97 !important;
+}
+
+.ggl-unistra-market-card{
+background:#f6f6f6;
+padding:15px;
+border-radius:10px;
+margin-top:12px;
+display:flex;
+justify-content:space-between;
+}
+
+.ggl-unistra-active{
+border:2px solid #4ADD97;
+background:#e9f8f1;
+}
+
+.ggl-unistra-total{
+font-size:28px;
+margin:10px 0 20px;
+}
+
+.ggl-unistra-breakdown div{
+display:flex;
+justify-content:space-between;
+margin-bottom:8px;
+}
+.right-card-div{
+    background:#1B1B1B;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 30px;
+    border: 1px solid #3D3D3D;
+}
+.ggl-unistra-right{
+background:#efefef;
+color:#000;
+border-radius:12px;
+padding:20px;
+text-align:left;
+width:315px;
+flex:none;
+padding-bottom: 40px;
+padding: 30px;
+border: 1px solid #3D3D3D;
+}
+
+.ggl-unistra-property-list{
+max-height:300px;
+overflow-y:auto;
+margin-top:10px;
+}
+
+.ggl-unistra-property-item{
+display:flex;
+gap:10px;
+align-items:center;
+margin-bottom:15px;
+}
+
+.ggl-unistra-property-item img{
+width:60px;
+height:60px;
+border-radius:10px;
+object-fit:cover;
+}
+
+.ggl-unistra-property-item p{
+color:#4ADD97;
+font-size:12px;
+}
+
+.ggl-unistra-footer{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-top:20px;
+}
+
+.ggl-unistra-footer label{
+    gap: 10px !important;
+}
+
+.ggl-unistra-footer label input{
+margin-right: 10PX;
+color: #4ADD97;
+background: transparent;
+}
+ 
+.text-small{
+    font-size: 11px;
+    color: #fff;
+    text-align: left;
+}
+
+.ggl-unistra-footer span{
+color:#4ADD97;
+}
+
+.ggl-unistra-buttons{
+display:flex;
+gap:15px;
+}
+
+.ggl-unistra-know-btn{
+border:1px solid #4ADD97;
+background:transparent;
+color:#4ADD97;
+padding:10px 22px;
+border-radius:25px;
+cursor:pointer;
+}
+
+.ggl-unistra-buy-btn{
+background:#4ADD97;
+border:none;
+padding:10px 26px;
+border-radius:25px;
+cursor:pointer;
+}
+
+.fa-solid .fa-circle-dot, .fa-regular .fa-circle{
+    color: #4ADD97;
+
+}
+
+
+/* =========================
+TABLET RESPONSIVE
+========================= */
+
+@media (max-width: 1024px){
+
+.ggl-unistra-section{
+padding:60px 25px;
+}
+
+.ggl-unistra-heading{
+font-size:28px;
+}
+
+.ggl-unistra-main-card{
+flex-direction:column;
+gap:20px;
+}
+
+.ggl-unistra-left{
+flex-direction:column;
+}
+
+.ggl-unistra-right{
+width:100%;
+}
+
+.ggl-unistra-property-list{
+max-height:250px;
+}
+
+}
+
+
+/* =========================
+MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px){
+
+.ggl-unistra-section{
+padding:50px 20px;
+}
+
+.ggl-unistra-heading{
+font-size:24px;
+}
+
+.ggl-unistra-toggle{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.ggl-unistra-toggle button{
+padding:8px 18px;
+font-size:14px;
+}
+
+.ggl-unistra-main-card{
+padding:20px;
+border-radius:12px;
+}
+
+.ggl-unistra-calc-box{
+padding:20px;
+}
+
+.ggl-unistra-total{
+font-size:22px;
+}
+
+.ggl-unistra-property-item img{
+width:50px;
+height:50px;
+}
+
+.ggl-unistra-footer{
+flex-direction:column;
+gap:15px;
+align-items:flex-start;
+}
+
+.ggl-unistra-buttons{
+width:100%;
+justify-content:space-between;
+}
+
+.ggl-unistra-know-btn,
+.ggl-unistra-buy-btn{
+flex:1;
+text-align:center;
+padding:10px 0;
+}
+
+
+
+.ggl-unistra-calc-box{
+    max-width: 100%;
+}
+
+.ggl-unistra-calc-box-two{
+    max-width: 100%;
+}
+
+.ggl-unistra-right{
+    width: 100%;
+}
+}
+
+
+/* =========================
+SMALL MOBILE
+========================= */
+
+@media (max-width: 480px){
+
+.ggl-unistra-heading{
+font-size:20px;
+}
+
+.ggl-unistra-ribbon{
+top:40px;
+left:-25px;
+font-size:12px;
+padding:6px 20px;
+}
+
+.ggl-unistra-qty-box{
+padding:6px 10px;
+}
+
+.ggl-unistra-qty-box button{
+width:30px;
+height:30px;
+}
+
+.ggl-unistra-market-card{
+flex-direction:column;
+gap:5px;
+}
+
+.ggl-unistra-property-item{
+gap:8px;
+}
+
+.ggl-unistra-property-item img{
+width:45px;
+height:45px;
+}
+
+}

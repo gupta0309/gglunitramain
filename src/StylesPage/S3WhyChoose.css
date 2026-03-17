@@ -1,0 +1,238 @@
+.why-choose-section {
+  padding: 100px 5%;
+  background: #ffffff;
+ 
+}
+.why-choose-section::before{
+  
+  content: "";
+  position: absolute;
+  
+transform: translateY(55%);
+  
+  width: 350px;
+  height: 300px;
+  
+  background: radial-gradient(
+    circle,
+    rgba(74,221,151,0.5) 1%,
+    rgba(45, 168, 70, 0.4) 30%,
+    rgba(150, 240, 109, 0.15) 60%,
+    transparent 80%
+  );
+
+  filter: blur(80px);   /* makes it very soft */
+  pointer-events: none;
+
+}
+.why-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.mini-badge {
+  background: #e6fff2;
+  color: #1A3C34;
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.why-main-title {
+  font-size: 28px;
+  margin-top: 25px;
+  color: #1a1a1a;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: "Droxen", sans-serif;
+}
+
+.green-text {
+  color: #00d383;
+}
+
+/* Layout Grid */
+.why-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 60px;
+  max-width: 1300px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+/* Left Image Styling */
+.image-container-left {
+  position: relative;
+}
+
+.main-featured-image {
+  position: relative;
+  border-radius: 40px;
+  overflow: hidden;
+  /* box-shadow: 0 30px 60px rgba(0,0,0,0.1); */
+}
+
+.main-featured-image img {
+  width: 100%;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.main-featured-image:hover img {
+  transform: scale(1.05);
+}
+
+/* Social Proof Badge */
+.social-proof-tag {
+  position: absolute;
+  bottom: 50px;
+  left: 30px;
+  background:#0000004f;
+  backdrop-filter: blur(10px);
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: #ffffff4f solid  0.5px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.avatar-group {
+  display: flex;
+  align-items: center;
+}
+
+.avatar-group img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  margin-left: -10px;
+}
+
+.avatar-group img:first-child { margin-left: 0; }
+
+.plus-count {
+  width: 50px;
+  height: 50px;
+  background: #00d383;
+  color: #000;
+  border-radius: 50%;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -10px;
+  border: 2px solid #000;
+  font-weight: bold;
+}
+
+/* --- ANIMATED BORDER CARDS --- */
+.cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.animated-border-card {
+  /* max-width: 290px; */
+  height: 246px;
+  position: relative;
+  border-radius: 25px;
+  padding: 2px; /* Border Thickness */
+  overflow: hidden;
+  background: #f0f4f8; /* Fallback */
+  
+}
+
+/* The Moving Gradient Border */
+.animated-border-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(
+    transparent, 
+    rgba(0, 211, 131, 0.8), 
+    transparent 40%
+    );
+    animation: spin 4s linear infinite;
+  }
+  
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.card-inner {
+  position: relative;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: inset 0 10px 15px 1px rgba(196, 238, 246, 0.4);
+  backdrop-filter: blur(5px);
+  border-radius: 22px;
+  padding: 0px 0px;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: background 0.3s;
+}
+
+.animated-border-card:hover .card-inner {
+  background: rgba(255, 255, 255, 1);
+}
+
+.card-icon-wrapper {
+  font-size: 45px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  filter: drop-shadow(0 5px 10px rgba(0, 211, 131, 0.2));
+}
+
+.card-inner h3 {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Droxen", sans-serif;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+  color: #111;
+}
+
+.card-inner p {
+  font-size: 14px;
+  color: #4B5563;
+  line-height: 100%;
+  max-width: 188px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 992px) {
+  .why-content-grid {
+    grid-template-columns: 1fr;
+  }
+  .image-container-left {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+  .mini-badge{
+    text-align: left;
+    
+  }
+  .why-main-title {
+    font-size: 18px;
+    text-align: left;
+  }
+  .why-choose-section::before { display: none};
+  .animated-border-card{max-width: 290px;}
+}
