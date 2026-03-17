@@ -115,7 +115,7 @@ const Footer = () => {
                 <span><HashLink smooth to="/">Home</HashLink></span>
                 <span><HashLink smooth to="/#about-us">About Us</HashLink></span>
                 <span><HashLink smooth to="/#portfolio">Property</HashLink></span>
-                <span><HashLink smooth to="/">Gallery</HashLink></span>
+                <span><HashLink smooth to="/gallery">Gallery</HashLink></span>
                 <span><HashLink smooth to="/#how-money">Blog</HashLink></span>
               </nav>
             </div>

@@ -1,6 +1,5 @@
 .pg-page{
-padding:80px;
-background:#f3f4f6;
+padding:10px 80px;
 font-family:"gued",sans-serif;
 }
 
@@ -29,12 +28,12 @@ position:absolute;
 top:50%;
 left:50%;
 transform:translate(-50%,-50%);
-background:#d9f9e7;
-color:#0f5132;
-padding:6px 16px;
+background:#C7FFDA;
+color: #1A3C34;
+padding:2px 16px;
 border-radius:20px;
-font-size:12px;
-font-weight:500;
+font-size:16px;
+font-weight:400;
 }
 
 
@@ -43,39 +42,48 @@ HEADER
 ======================= */
 
 .pg-header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-margin-bottom:30px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:30px;
 gap:20px;
 }
 
 .pg-heading h2{
-font-size:48px;
-font-weight:600;
-margin-bottom:6px;
+  font-size:48px;
+  font-weight:400;
+  margin-bottom:6px;
+  color: #0F172A;
 }
 
 .pg-heading p{
 color:#6b7280;
 max-width:700px;
-font-size:20px;
+font-size:18px;
 line-height:2;
 letter-spacing: 0.001rem;
+line-height: 29.25px;
 }
 
 .pg-add-btn{
-background:#4ADD97;
-border:none;
-padding:10px 18px;
-border-radius:8px;
-cursor:pointer;
-font-size:16px;
-font-weight:400;
+  background:#4ADD97;
+  border:none;
+  padding:10px 18px;
+  border-radius:8px;
+  cursor:pointer;
+  font-size:16px;
+  font-weight:400;
 }
 
 .pg-add-btn i{
-    color: black;
+  color: black;
+}
+
+.poster-gallery-wrapper{
+  background: linear-gradient(360deg, rgba(255, 255, 255, 0.35) 9.62%, rgba(169, 213, 216, 0.2415) 58.72%, rgba(83, 170, 176, 0.196) 98.26%);
+  padding: 30px 50px;
+  border-radius: 20px;
+  border: 2px solid #ffffff90;
 }
 
 /* =======================
@@ -159,12 +167,13 @@ POSTER SLIDER ADD-ON
   width: 46px;
   height: 46px;
   border-radius: 50%;
-  border: 1px solid #9ed9b7;
   background: #f4fffa;
   color: #1f2937;
   font-size: 20px;
   cursor: pointer;
   transition: 0.3s ease;
+  border: 1px solid #9ed9b7;
+  box-shadow: inset 0px 2px 6px rgba(158, 217, 183, 0.6);
 }
 
 .pg-nav-btn:hover {
@@ -214,18 +223,18 @@ FINAL RESPONSIVE PHOTO + VIDEO GALLERY (SAFE UNIQUE CLASSES)
 }
 
 .lg-head-left h2 {
-  font-size: 42px;
+  font-size: 48px;
   line-height: 1.2;
-  font-weight: 600;
-  color: #111827;
+  font-weight: 400;
+  color: #0F172A;
   margin: 0 0 10px;
 }
 
 .lg-head-left p {
-  max-width: 780px;
-  color: #6b7280;
-  font-size: 16px;
-  line-height: 1.8;
+  max-width: 600px;
+  color: #475569;
+  font-size: 18px;
+  line-height: 29.25px;
   margin: 0;
 }
 
@@ -234,8 +243,8 @@ FINAL RESPONSIVE PHOTO + VIDEO GALLERY (SAFE UNIQUE CLASSES)
   border: none;
   border-radius: 12px;
   padding: 11px 18px;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 400;
   color: #111827;
   cursor: pointer;
   display: flex;
@@ -289,8 +298,8 @@ FINAL RESPONSIVE PHOTO + VIDEO GALLERY (SAFE UNIQUE CLASSES)
 
 .lg-tag {
   display: inline-block;
-  background: rgba(74, 221, 151, 0.95);
-  color: #ffffff;
+  background: #4ADD9733;
+  color: #4ADD97;
   font-size: 10px;
   font-weight: 700;
   padding: 5px 10px;
@@ -302,7 +311,7 @@ FINAL RESPONSIVE PHOTO + VIDEO GALLERY (SAFE UNIQUE CLASSES)
 .lg-photo-overlay h4 {
   color: #ffffff;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
   margin: 0;
   text-shadow: 0 3px 12px rgba(0, 0, 0, 0.4);
 }
@@ -424,12 +433,14 @@ FINAL RESPONSIVE PHOTO + VIDEO GALLERY (SAFE UNIQUE CLASSES)
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  border: 1px solid #dce8e1;
   background: #ffffff;
   color: #111827;
   cursor: pointer;
   font-size: 18px;
   transition: all 0.3s ease;
+   border: 1px solid #9ed9b7;
+  box-shadow: inset 0px 2px 6px rgba(158, 217, 183, 0.6);
+
 }
 
 .lg-arrow-btn:hover {

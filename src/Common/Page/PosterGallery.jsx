@@ -187,6 +187,7 @@ const PosterGallery = () => {
         </div>
 
         {/* HEADER */}
+        <div className="poster-gallery-wrapper">
         <div className="pg-header">
           <div className="pg-heading">
             <h2>Poster Gallery</h2>
@@ -220,10 +221,10 @@ const PosterGallery = () => {
 
         {/* ORIGINAL CONTROLS */}
         <div className="pg-controls">
-          <button className="pg-nav-btn" onClick={handlePrev}>&#8592;</button>
-          <button className="pg-nav-btn" onClick={handleNext}>&#8594;</button>
+          <button className="pg-nav-btn" onClick={handlePrev}><i className="fa-solid fa-arrow-left"></i></button>
+          <button className="pg-nav-btn" onClick={handleNext}><i className="fa-solid fa-arrow-right"></i></button>
         </div>
-
+</div>
         {/* ===================== NEW PHOTO GALLERY ===================== */}
         <div className="lg-wrap">
           <div className="lg-box">
@@ -231,10 +232,8 @@ const PosterGallery = () => {
               <div className="lg-head-left">
                 <h2>Photo Gallery</h2>
                 <p>
-                  Discover our curated collection of luxury residential and commercial
-                  developments. Architecturally refined spaces crafted for modern lifestyles,
-                  premium comfort, and exceptional investment value.
-                </p>
+                 Discover our curated collection of luxury residential and commercial
+developments. Architecturally significant spaces designed for modern living.  </p>
               </div>
 
               <button className="lg-add-btn">
@@ -266,7 +265,7 @@ const PosterGallery = () => {
                   setPhotoIndex((prev) => (prev <= 0 ? maxPhotoIndex : prev - 1))
                 }
               >
-                &#8592;
+                <i className="fa-solid fa-arrow-left"></i>
               </button>
               <button
                 className="lg-arrow-btn"
@@ -274,7 +273,7 @@ const PosterGallery = () => {
                   setPhotoIndex((prev) => (prev >= maxPhotoIndex ? 0 : prev + 1))
                 }
               >
-                &#8594;
+               <i className="fa-solid fa-arrow-right"></i>
               </button>
             </div>
           </div>
@@ -285,10 +284,8 @@ const PosterGallery = () => {
               <div className="lg-head-left">
                 <h2>Video Gallery</h2>
                 <p>
-                  Explore immersive project showcases through our video gallery. Watch
-                  walkthroughs of premium residences, commercial developments, and signature
-                  real estate experiences built with design excellence.
-                </p>
+                 Discover our curated collection of luxury residential and commercial
+developments. Architecturally significant spaces designed for modern living.   </p>
               </div>
 
               <button className="lg-add-btn">
@@ -334,24 +331,7 @@ const PosterGallery = () => {
               </div>
             </div>
 
-            <div className="lg-arrow-wrap">
-              <button
-                className="lg-arrow-btn"
-                onClick={() =>
-                  setVideoIndex((prev) => (prev <= 0 ? maxVideoIndex : prev - 1))
-                }
-              >
-                &#8592;
-              </button>
-              <button
-                className="lg-arrow-btn"
-                onClick={() =>
-                  setVideoIndex((prev) => (prev >= maxVideoIndex ? 0 : prev + 1))
-                }
-              >
-                &#8594;
-              </button>
-            </div>
+           
 
             <div className="lg-view-more-wrap">
               <button className="lg-view-more-btn">
