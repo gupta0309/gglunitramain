@@ -132,9 +132,7 @@ const Footer = () => {
               <nav className="nova-nav">
                 <span>Terms & Conditions</span>
                 <span>Privacy Policy</span>
-                <span>Risk Disclosure</span>
-                <span>Fraction Ownership Agreement</span>
-              </nav>
+                </nav>
             </div>
 
 
