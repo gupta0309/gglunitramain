@@ -3,8 +3,8 @@ import React, { useRef, useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import '../../StylesPage/S4About.css';
 import icon from "../../assetsPage/assets/S4About/Icon.png"
-import about from "../../assetsPage/assets/S3WhyChoose/main.jpg"
 import video from "../../assetsPage/assets/S4About/video.mp4"
+import { HashLink } from 'react-router-hash-link';
 
 const stats = [
   { label: '  Year Established', left: '2014', },
@@ -110,7 +110,9 @@ const S4About = () => {
             whileTap={{ scale: 0.95 }}
             className="re-platform__cta-button"
           >
-            Learn More
+                 <HashLink smooth to="/about-us">
+                       Learn More
+                     </HashLink>
           </motion.button>
         </motion.div>
 

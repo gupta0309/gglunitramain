@@ -113,10 +113,10 @@ const Footer = () => {
 
               <nav className="nova-nav">
                 <span><HashLink smooth to="/">Home</HashLink></span>
-                <span><HashLink smooth to="/#about-us">About Us</HashLink></span>
+                <span><HashLink smooth to="/about-us">About Us</HashLink></span>
                 <span><HashLink smooth to="/#portfolio">Property</HashLink></span>
                 <span><HashLink smooth to="/gallery">Gallery</HashLink></span>
-                <span><HashLink smooth to="/#how-money">Blog</HashLink></span>
+                <span><HashLink smooth to="/blog">Blog</HashLink></span>
               </nav>
             </div>
 
@@ -125,8 +125,9 @@ const Footer = () => {
               <h4 className="nova-col-title">Legal</h4>
 
               <nav className="nova-nav">
-                <span>Terms & Conditions</span>
-                <span>Privacy Policy</span>
+                <span><HashLink smooth to="/terms-and-conditions">Terms & Conditions</HashLink></span>
+
+                <span><HashLink smooth to="/privacy-policy">Privacy Policy</HashLink></span>
                 </nav>
             </div>
 

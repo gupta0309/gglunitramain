@@ -153,7 +153,7 @@ POSTER SLIDER ADD-ON
  
   object-fit: contain;
 }
-
+  
 .pg-controls {
   display: flex;
   justify-content: center;
@@ -357,7 +357,7 @@ FINAL RESPONSIVE PHOTO + VIDEO GALLERY (SAFE UNIQUE CLASSES)
   position: absolute;
   top: 12px;
   right: 12px;
-  background: rgba(17, 24, 39, 0.78);
+  /* background: rgba(17, 24, 39, 0.78); */
   color: #ffffff;
   font-size: 10px;
   padding: 5px 8px;
