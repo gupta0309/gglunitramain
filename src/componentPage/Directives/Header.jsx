@@ -77,7 +77,7 @@ const Navbar = () => {
           </HashLink>
         </li>
         <li>
-          <HashLink smooth to="/#about-us">
+          <HashLink smooth to="/about-us">
             About
           </HashLink>
         </li>
@@ -87,17 +87,17 @@ const Navbar = () => {
           </HashLink>
         </li>
         <li>
-          <HashLink smooth to="/">
+          <HashLink smooth to="/gallery">
             Gallery
           </HashLink>
         </li>
          <li>
-          <HashLink smooth to="/">
+          <HashLink smooth to="/blog">
             Blog
           </HashLink>
         </li>
         <li>
-          <HashLink smooth to="/#regulation-section">
+          <HashLink smooth to="/contact">
             Contact
           </HashLink>
         </li>

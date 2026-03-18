@@ -35,7 +35,9 @@ const photoGallery = [
   { img: pgposter1, title: "Skyline Heights" },
   { img: pgposter2, title: "Azure Residences" },
   { img: pgposter3, title: "Tower Elite" },
-  
+  { img: pgposter1, title: "Skyline Heights" },
+  { img: pgposter2, title: "Azure Residences" },
+  { img: pgposter3, title: "Tower Elite" },
 ];
 
 /* VIDEO GALLERY DATA */
@@ -45,35 +47,35 @@ const videoGallery = [
     thumb: poster3,
     title: "Residential Tower",
     desc: "A complete walk-through of our premium residential tower crafted for modern living and lifestyle excellence.",
-    duration: "04:15",
+   
   },
   {
     video: video2,
     thumb: poster4,
     title: "Luxury Villa",
     desc: "Explore luxury architecture, premium interiors, and thoughtfully planned spaces built for comfort and elegance.",
-    duration: "03:40",
+   
   },
   {
     video: video3,
     thumb: poster5,
     title: "Urban Residences",
     desc: "Discover elevated city living through our signature urban residential developments and modern amenities.",
-    duration: "05:10",
+  
   },
   {
     video: video4,
     thumb: poster6,
     title: "Commercial Space",
     desc: "A detailed visual showcase of our modern commercial projects designed for growth and investment opportunity.",
-    duration: "04:05",
+  
   },
   {
     video: video5,
     thumb: poster7,
     title: "Premium Living",
     desc: "Experience architectural elegance and curated spaces built to redefine premium living standards.",
-    duration: "03:55",
+ 
   },
 ];
 
